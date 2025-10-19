@@ -1,0 +1,35 @@
+package code;
+
+import java.util.Scanner;
+
+public class ReverseString {
+
+	public static void main(String[] args) {
+		
+		Scanner s = new Scanner(System.in);
+		
+		System.out.println("Enter the String");
+		
+		String str = s.nextLine();
+		
+		reverseCharacter(str);
+		
+		s.close();
+
+	}
+	
+	public static void reverseCharacter(String str)
+	{
+		String s[] = str.split(" ");
+		
+		String rev = "";
+		
+		for(int i=s.length-1; i>=0; i--)
+		{
+			rev += s[i] + " ";
+		}
+		
+		System.out.println("Reversed Character: "+rev);
+	}
+
+}

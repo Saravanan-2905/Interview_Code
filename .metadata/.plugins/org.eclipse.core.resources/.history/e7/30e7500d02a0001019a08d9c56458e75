@@ -1,0 +1,11 @@
+package code;
+
+public class Anagram {
+
+	public static void main(){
+			
+		System.out.println("HI");
+
+	}
+
+}
