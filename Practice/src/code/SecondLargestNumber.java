@@ -1,17 +1,19 @@
 package code;
 
+import java.util.Arrays;
+
 public class SecondLargestNumber {
 
 	public static void main(String[] args) {
 		
 		int a[] = {34, 9, 1, 6, 10};
 		
-		for(int i=0; i<a.length-1; i++)
+		for(int i=0; i<a.length; i++)
 		{
 			int temp;
 			for(int j=i+1; j<a.length; j++)
 			{
-				if(a[i] < a[j])
+				if(a[i] > a[j])
 				{
 					temp = a[i];
 					a[i] = a[j];
@@ -21,9 +23,11 @@ public class SecondLargestNumber {
 			}
 		}
 
-		System.out.println("Largest Number: "+a[0]); 
-		System.out.println("Second Largest Number: "+a[1]); 
-		System.out.println("Smallest Number: "+a[4]);
+		System.out.println("Largest Number: "+a[4]); 
+		System.out.println("Second Largest Number: "+a[3]); 
+		System.out.println("Smallest Number: "+a[0]);
+		
+		System.out.println("Largest Number: "+Arrays.toString(a));
 	}
 
 }

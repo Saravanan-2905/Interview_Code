@@ -22,14 +22,18 @@ public class ReverseString {
 	{
 		String s[] = str.split(" ");
 		
-		String rev = "";
+		StringBuilder sb =  new StringBuilder();
 		
 		for(int i=s.length-1; i>=0; i--)
 		{
-			rev += s[i] + " ";
+			sb.append(s[i]).append(" ");
 		}
 		
-		System.out.println("Reversed Character: "+rev);
+//		if (sb.length() > 0) {
+//		    sb.setLength(sb.length() - 1);
+//		}
+		
+		System.out.println("Reversed String: "+sb);
 	}
 
 }
