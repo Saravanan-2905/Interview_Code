@@ -1,0 +1,177 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Login should be success",
+        "description": "",
+        "id": "bookcart-application-demo;login-should-be-success",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 6958809042,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User should navigate to the application",
+            "match": {
+              "location": "LoginSteps.userShouldNavigateToTheApplication()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3085160083,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User enter the username as \"Admin\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Admin\"",
+                  "offset": 27
+                }
+              ],
+              "location": "LoginSteps.userEnterTheUsernameAs(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 22370042,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User enter the password as \"admin123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"admin123\"",
+                  "offset": 27
+                }
+              ],
+              "location": "LoginSteps.userEnterThePasswordAs(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 21604500,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User click the login button",
+            "match": {
+              "location": "LoginSteps.userClickTheLoginPage()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3628091125,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Login should be success",
+            "match": {
+              "location": "LoginSteps.loginShouldBeSuccess()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 10,
+        "name": "Login should be fail",
+        "description": "",
+        "id": "bookcart-application-demo;login-should-be-fail",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 15156175833,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User should navigate to the application",
+            "match": {
+              "location": "LoginSteps.userShouldNavigateToTheApplication()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 625349125,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User enter the username as \"Admins\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Admins\"",
+                  "offset": 27
+                }
+              ],
+              "location": "LoginSteps.userEnterTheUsernameAs(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 21644458,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User enter the password as \"admin1234\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"admin1234\"",
+                  "offset": 27
+                }
+              ],
+              "location": "LoginSteps.userEnterThePasswordAs(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1555926208,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User click the login button",
+            "match": {
+              "location": "LoginSteps.userClickTheLoginPage()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 660205541,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "Login should be fail",
+            "match": {
+              "location": "LoginSteps.loginShouldBeFail()"
+            },
+            "keyword": "But "
+          }
+        ]
+      }
+    ],
+    "name": "BookCart application demo",
+    "description": "",
+    "id": "bookcart-application-demo",
+    "keyword": "Feature",
+    "uri": "src/test/java/features/login.feature",
+    "tags": []
+  }
+]

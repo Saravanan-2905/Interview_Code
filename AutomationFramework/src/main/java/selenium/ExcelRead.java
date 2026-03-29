@@ -29,10 +29,10 @@ public class ExcelRead {
 			
 			XSSFSheet sheet = wb.getSheetAt(sheetIndex);
 			
-			int lastRow = sheet.getLastRowNum();
+			int lastRow = sheet.getPhysicalNumberOfRows(); // getPhysicalNumberOfRows() - Included table header
 			int lastCell = sheet.getRow(0).getLastCellNum();
 			
-			for(int i =1; i<=lastRow; i++)
+			for(int i =0; i<=lastRow; i++)
 			{
 				Row row = sheet.getRow(i);
 				
@@ -43,7 +43,7 @@ public class ExcelRead {
 					Cell cell = row.getCell(j);
 					
 					String value = formatter.formatCellValue(cell);
-					System.out.println(value + "\t");
+					System.out.print(value + " ");
 					
 				}
 				System.out.println();

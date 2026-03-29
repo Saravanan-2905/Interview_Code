@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="31.735867">
+    <testcase classname="BookCart application demo" name="Login should be success" time="13.716501">
+        <system-out><![CDATA[Given User should navigate to the application...............................passed
+And User enter the username as "Admin"......................................passed
+And User enter the password as "admin123"...................................passed
+When User click the login button............................................passed
+Then Login should be success................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="BookCart application demo" name="Login should be fail" time="18.019366">
+        <system-out><![CDATA[Given User should navigate to the application...............................passed
+And User enter the username as "Admins".....................................passed
+And User enter the password as "admin1234"..................................passed
+When User click the login button............................................passed
+But Login should be fail....................................................passed
+]]></system-out>
+    </testcase>
+</testsuite>

@@ -25,13 +25,10 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
-			<item value="AutomationFramework.AutomationFramework"/>
 		</list>
 		<list key="groupId">
-			<item value="AutomationFramework"/>
 		</list>
 		<list key="artifactId">
-			<item value="AutomationFramework"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -47,10 +44,12 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
+			<item value="code"/>
 		</list>
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="codecucumber"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>

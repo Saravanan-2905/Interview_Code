@@ -1,54 +1,30 @@
 package selenium;
 
-import java.io.FileInputStream;
+import java.io.File;
 
-import org.apache.poi.ss.usermodel.DataFormatter;
-import org.apache.poi.xssf.usermodel.XSSFCell;
-import org.apache.poi.xssf.usermodel.XSSFRow;
-import org.apache.poi.xssf.usermodel.XSSFSheet;
-import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Practice {
 
 	public static void main(String[] args) throws Exception {
 		
-		String fileLocation = "./src/test/resources/testdata/OpenCartTestData.xlsx";
+		WebDriver driver = new ChromeDriver();
 		
-		readExcel(fileLocation, 0);
+		driver.get("https://www.flipkart.com");
+		
+		TakesScreenshot ts = (TakesScreenshot) driver;
+		
+		File source = ts.getScreenshotAs(OutputType.FILE);
+		
+		File target = new File("./Flipkart.png");
+		
+		FileUtils.copyFile(source, target);
+		
+	}
 
-	}
-	
-	public static void readExcel(String filePath, int sheetIndex) throws Exception
-	{
-		DataFormatter formatter = new DataFormatter();
-		
-		FileInputStream fis = new FileInputStream(filePath);
-		
-		XSSFWorkbook wb = new XSSFWorkbook(fis);
-		
-		XSSFSheet sheet = wb.getSheetAt(sheetIndex);
-		
-		int lastRow = sheet.getLastRowNum();
-		
-		int lastCell = sheet.getRow(0).getLastCellNum();
-		
-		for(int i=1; i<=lastRow; i++)
-		{
-			XSSFRow row = sheet.getRow(i);
-			
-			if(row == null) continue;
-			
-			for(int j=0; j<lastCell; j++)
-			{
-				XSSFCell cell = row.getCell(j);
-				
-				String value = formatter.formatCellValue(cell);
-				
-				System.out.println(value+"\t");
-			}
-			System.out.println();	
-		} 
-		
-	}
 
 }
