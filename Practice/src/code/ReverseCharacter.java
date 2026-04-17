@@ -4,13 +4,14 @@ import java.util.Scanner;
 
 public class ReverseCharacter {
 
+	
 	public static void main(String[] args) {
 		
 		Scanner s = new Scanner(System.in);
 		
 		System.out.println("Enter the String");
 		
-		String str = s.nextLine();
+		String str = s.nextLine();	
 		
 		reverseString(str);
 		

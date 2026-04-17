@@ -1,6 +1,7 @@
 package code;
 
 public class CharacterOccurrenceWithoutHashMap {
+	
     public static void main(String[] args) {
       
       String s = "I am Saravanan";
@@ -9,8 +10,7 @@ public class CharacterOccurrenceWithoutHashMap {
       
       for(char c : s.toLowerCase().toCharArray())
       {
-        a[c] = a[c]+1;
-        
+        a[c] = a[c]+1;       
       }
       
       for(int i=0; i<a.length; i++)
@@ -27,10 +27,7 @@ public class CharacterOccurrenceWithoutHashMap {
         {
           //System.out.println((char)i +"Unique : "+ a[i]);
         }
-      }
-      
-      
-      
+      }    
       
   }
 }

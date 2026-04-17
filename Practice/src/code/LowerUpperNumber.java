@@ -38,15 +38,15 @@ public class LowerUpperNumber {
 		 {
 			 if(c >= 'A' && c <= 'Z')
 			 {
-				 upperCase = upperCase + c;
+				 upperCase += c;
 			 }
 			 else if(c >= 'a' && c <= 'z')
 			 {
-				 lowerCase = lowerCase + c;
+				 lowerCase += c;
 			 }
 			 else if(c >= '0' && c <= '9')
 			 {
-				 numbers = numbers + c;
+				 numbers += c;
 			 }
 			 else 
 			 {
@@ -60,19 +60,19 @@ public class LowerUpperNumber {
 		 {
 			 if(Character.isUpperCase(c))
 			 {
-				 upperCase = upperCase + c;
+				 upperCase += c;
 			 }
 			 else if(Character.isLowerCase(c))
 			 {
-				 lowerCase = lowerCase + c;
+				 lowerCase += c;
 			 }
 			 else if(Character.isDigit(c))
 			 {
-				 numbers = numbers + c;
+				 numbers += c;
 			 }
 			 else 
 			 {
-				 specChar = specChar + c;
+				 specChar += c;
 			 } 
 		 }
 		
