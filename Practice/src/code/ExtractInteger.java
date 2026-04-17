@@ -11,7 +11,8 @@ public class ExtractInteger {
 		
 		for(String c : s)
 		{
-			String num =  c.replaceAll("^[^0-9]", "")
+			String num =  c.replaceAll("^[^0-9]+", "")  // + --> Removes everything from start until first digit appears
+														//Removes "USD " completely --> Result: "89,989.00"
 						  .replaceAll("\\..*", "")
 						  .replaceAll("[^0-9]", "");
 			System.out.println(Integer.parseInt(num));	
