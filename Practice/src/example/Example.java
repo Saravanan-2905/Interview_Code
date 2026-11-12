@@ -6,7 +6,7 @@ public class Example {
 
 	public static void main(String[] args) {
 	      
-	      String s = "I am Chandrika Husband Saravanan";
+	      String s = "I am Chandrika Husband Saravanan Ekambaram";
 	      
 	      String str[] = s.split(" ");
 	      
