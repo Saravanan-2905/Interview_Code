@@ -21,6 +21,7 @@ public class CharacterOccurrenceWithoutHashMap {
 //          {
 //            continue;
 //          }
+
           System.out.println((char)i +"  : "+ a[i]);
         }
         else
